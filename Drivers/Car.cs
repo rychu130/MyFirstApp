@@ -5,10 +5,14 @@ using System.Text;
 
 namespace Drivers
 {
-    class Car:Vehicle
+    partial class Car:Vehicle //tylko pola i konsruktory
     {
         string petName;
-        public int currSpeed { public get; set; }
+        int Speed;
+        public int currSpeed { 
+            get { return Speed; } 
+            set { Speed = (value <= 200) ? value : 200; } 
+        }//właściwość .NET / property
         
         public Car() {
             petName = " ";
@@ -19,13 +23,5 @@ namespace Drivers
             this.currSpeed = currSpeed;
         }
         
-        public void speedUp(int delta)
-        {
-            currSpeed += delta;
-        }
-        public void printState() {
-            Console.WriteLine("{0} is going {1} km/h", petName, Convert.ToString(currSpeed));//nie wymagane konwertowanie
-        }
-
     }
 }

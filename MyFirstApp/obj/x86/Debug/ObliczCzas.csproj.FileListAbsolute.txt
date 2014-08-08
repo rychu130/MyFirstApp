@@ -1,0 +1,6 @@
+C:\Users\Asus\documents\visual studio 2010\Projects\MyFirstApp\MyFirstApp\bin\Debug\ObliczCzas.exe
+C:\Users\Asus\documents\visual studio 2010\Projects\MyFirstApp\MyFirstApp\bin\Debug\ObliczCzas.pdb
+C:\Users\Asus\documents\visual studio 2010\Projects\MyFirstApp\MyFirstApp\obj\x86\Debug\MyFirstApp.Form1.resources
+C:\Users\Asus\documents\visual studio 2010\Projects\MyFirstApp\MyFirstApp\obj\x86\Debug\ObliczCzas.csproj.GenerateResource.Cache
+C:\Users\Asus\documents\visual studio 2010\Projects\MyFirstApp\MyFirstApp\obj\x86\Debug\ObliczCzas.exe
+C:\Users\Asus\documents\visual studio 2010\Projects\MyFirstApp\MyFirstApp\obj\x86\Debug\ObliczCzas.pdb

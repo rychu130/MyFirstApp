@@ -1,0 +1,4 @@
+C:\Users\Asus\Documents\Visual Studio 2010\Projects\MyFirstApp\MyFirstApp\bin\Release\MyFirstApp.exe
+C:\Users\Asus\Documents\Visual Studio 2010\Projects\MyFirstApp\MyFirstApp\bin\Release\MyFirstApp.pdb
+C:\Users\Asus\Documents\Visual Studio 2010\Projects\MyFirstApp\MyFirstApp\obj\x86\Release\MyFirstApp.exe
+C:\Users\Asus\Documents\Visual Studio 2010\Projects\MyFirstApp\MyFirstApp\obj\x86\Release\MyFirstApp.pdb

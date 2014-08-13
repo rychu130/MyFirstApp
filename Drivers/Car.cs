@@ -13,6 +13,19 @@ namespace Drivers
             get { return Speed; } 
             set { Speed = (value <= 200) ? value : 200; } 
         }//właściwość .NET / property
+
+        private Gearbox gear = new Gearbox();
+
+        public Gearbox gears
+        {
+            get { return gear; }
+            set { gear = value; }
+        }
+
+        public int getNumberOfGears()
+        {
+            return gear.numberOfGears;
+        }
         
         public Car() {
             petName = " ";

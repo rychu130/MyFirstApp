@@ -36,6 +36,8 @@
   <ItemGroup>
     <Compile Include="Car.cs" />
     <Compile Include="Gearbox.cs" />
+    <Compile Include="Car_part2.cs" />
+    <Compile Include="Garage.cs" />
     <Compile Include="mainprog.cs" />
     <Compile Include="Motorcycle.cs" />
     <Compile Include="Vehicle.cs" />

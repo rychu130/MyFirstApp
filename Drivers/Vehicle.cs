@@ -5,23 +5,30 @@ using System.Text;
 
 namespace Drivers
 {
+    public enum WheelTypes{soft, medium_soft, medium_hard, hard};
     abstract class Vehicle
     {
-        /*protected static string WheelType = "soft";
-        public static void changeWheelType(string wheel)
-        {
-            WheelType = wheel;
+        private Gearbox gear;
+        public WheelTypes wheelType { get; set; }
+
+        public Vehicle():this(WheelTypes.soft, new Gearbox()) { }
+        public Vehicle(WheelTypes wt):this(wt, new Gearbox()) { }
+        public Vehicle(WheelTypes wt, Gearbox g){
+            gear = g;
+            wheelType = wt;
         }
-        public static string getWheelType()
+        
+        public Gearbox gears
         {
-            return WheelType;
-        }*/
-        // właściwość .NET
-        static string VehicleWheelType = "soft";
-        public static string WheelType
+            get { return gear; }
+            set { gear = value; }
+        }//delegat
+
+        public int getNumberOfGears()
         {
-            get { return VehicleWheelType; }
-            set { VehicleWheelType = value; }
+            return gear.numberOfGears;
         }
+        
+
     }
 }

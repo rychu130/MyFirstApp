@@ -7,13 +7,13 @@ namespace Drivers
 {
     class Gearbox
     {
-        private int numberOfGears;
-        public int gears
+        private int numOfGears;
+        public int numberOfGears//property getting and setting numOfGears
         {
-            get { return numberOfGears; }
+            get { return numOfGears; }
             set {
-                if (type == GearboxType.manual) numberOfGears = value;
-                else numberOfGears = 0; //TODO raise exception
+                if (type == GearboxType.manual) numOfGears = value;
+                else numOfGears = 0; //TODO raise exception
             }
         }
         public enum GearboxType { manual, automatic }

@@ -7,7 +7,7 @@ namespace Drivers
 {
     class Garage
     {
-        Vehicle[] vlist;
+        Vehicle[] vlist = new Vehicle[10];
         public int numberOfCars { get; set; }
 
         public int addVehicle(Vehicle v)
@@ -22,21 +22,24 @@ namespace Drivers
             }
             if (success)
             {
-                vlist[vlist.Length] = v;
+                vlist[numberOfCars] = v;
+                numberOfCars++;
                 return 1;
             }
             else return 0;
         }
 
-        public Vehicle[] list {
-            get
+        public void printVehicles()
+        {
+            foreach (Vehicle v in vlist)
             {
-                return vlist;
+                Console.WriteLine("{0}", v.ToString());// TODO overload Vehicle's ToString method
             }
         }
-        /*public Vehicle[] getVehicles() { 
-            return vlist;
-        }*/
+        public Vehicle[] list {
+            get{return vlist;}
+        }
+        
 
 
     }

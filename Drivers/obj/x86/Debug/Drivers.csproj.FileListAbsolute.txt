@@ -4,3 +4,4 @@ C:\Users\Asus\Documents\Visual Studio 2010\Projects\MyFirstApp\Drivers\obj\x86\D
 C:\Users\Asus\Documents\Visual Studio 2010\Projects\MyFirstApp\Drivers\obj\x86\Debug\Drivers.pdb
 D:\ROSIK\Repositories\MyFirstApp\Drivers\obj\x86\Debug\Drivers.exe
 D:\ROSIK\Repositories\MyFirstApp\Drivers\obj\x86\Debug\Drivers.pdb
+C:\Users\Asus\Documents\Visual Studio 2010\Projects\MyFirstApp\Drivers\obj\x86\Debug\Drivers.csprojResolveAssemblyReference.cache

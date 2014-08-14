@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Drivers
 {
-    partial class Car:Vehicle //tylko pola i konsruktory
+    partial class Car:Vehicle //pola
     {
         string petName;
         int Speed;
@@ -13,19 +13,7 @@ namespace Drivers
             get { return Speed; } 
             set { Speed = (value <= 200) ? value : 200; } 
         }//właściwość .NET / property
-
-        private Gearbox gear = new Gearbox();
-
-        public Gearbox gears
-        {
-            get { return gear; }
-            set { gear = value; }
-        }
-
-        public int getNumberOfGears()
-        {
-            return gear.numberOfGears;
-        }
+        
         
         public Car() {
             petName = " ";

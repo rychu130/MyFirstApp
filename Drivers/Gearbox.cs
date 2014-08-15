@@ -5,6 +5,7 @@ using System.Text;
 
 namespace Drivers
 {
+    public enum GearboxType { manual, automatic }
     class Gearbox
     {
         private int numOfGears;
@@ -16,7 +17,16 @@ namespace Drivers
                 else numOfGears = 0; //TODO raise exception
             }
         }
-        public enum GearboxType { manual, automatic }
-        public GearboxType type;
+        public GearboxType type{get;set;}
+        public Gearbox():this(GearboxType.manual){}
+        public Gearbox(GearboxType type) {
+            this.type = type;
+            numberOfGears = 0;
+        }
+        public Gearbox(GearboxType type, int numOfGears)
+        {
+            this.type = type;
+            this.numberOfGears = numOfGears;
+        }
     }
 }

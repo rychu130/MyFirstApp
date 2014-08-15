@@ -28,7 +28,10 @@ namespace Drivers
         {
             return gear.numberOfGears;
         }
-        
+        public override string ToString()
+        {
+            return base.ToString()+" this Vehicle's Gearbox is " + gear.type.ToString();
+        }
 
     }
 }

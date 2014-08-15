@@ -33,7 +33,10 @@ namespace Drivers
         {
             foreach (Vehicle v in vlist)
             {
-                Console.WriteLine("{0}", v.ToString());// TODO overload Vehicle's ToString method
+                if (v!=null)
+                {
+                    Console.WriteLine("{0}", v.ToString());// TODO overload Vehicle's ToString method
+                }
             }
         }
         public Vehicle[] list {

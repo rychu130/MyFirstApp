@@ -22,5 +22,10 @@ namespace Drivers
         public void setSpeed(int speed) {
             this.speed = speed;
         }
+        public override string ToString()
+        {
+            string s = String.Format("{0} \n This is a Motorcycle. It's current speed is {1} and it's driver's name is {2}", base.ToString(), speed, driverName);
+            return s;
+        }
     }
 }

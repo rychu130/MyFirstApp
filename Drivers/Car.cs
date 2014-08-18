@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Drivers
 {
-    partial class Car:Vehicle //pola
+    partial class Car:Vehicle,IDisposable //pola
     {
         string petName;
         int Speed;
@@ -23,6 +23,11 @@ namespace Drivers
             this.petName = petName;
             this.currSpeed = currSpeed;
         }
-        
+        public override string ToString()
+        {
+            string s = String.Format("{0} \n This is a Car. It's current speed is {1} and it's petName is {2}", base.ToString(), currSpeed, petName);
+            return s;
+        }
+        ~
     }
 }

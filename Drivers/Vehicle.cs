@@ -30,8 +30,12 @@ namespace Drivers
         }
         public override string ToString()
         {
-            return base.ToString()+" this Vehicle's Gearbox is " + gear.type.ToString();
+            return base.ToString()+" this Vehicle's Gearbox is " + gear.type.ToString();//string from enum
         }
-
+        //public override bool Equals(object obj)
+        //{
+        //    if (this.GetType() != obj.GetType()) return false;
+        //    else return base.Equals(obj);
+        //}
     }
 }

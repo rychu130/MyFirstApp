@@ -31,6 +31,18 @@ namespace Drivers
             g.addVehicle(myCar2);
             g.addVehicle(myMotor);
             g.printVehicles();
+            Car []mynewCar = new Car[100];
+            for (int i = 0; i < 100; i++) {
+                mynewCar[i] = new Car();
+            }
+            mynewCar = null;
+            GC.WaitForPendingFinalizers();
+            
+            Console.WriteLine("{0}", GC.GetTotalMemory(false));
+            System.Threading.Thread.Sleep(2000);
+            System.GC.Collect(1, GCCollectionMode.Forced);
+            GC.WaitForPendingFinalizers();
+            Console.WriteLine("{0}", GC.GetTotalMemory(false));
             Console.ReadLine();
         }
     }
